@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ce0ecf12a00d9447b3a2975a501b6d0, type: 3}
+  m_Name: Character2_Data
+  m_EditorClassIdentifier: 
+  Id: 0
+  Name: "\u79C0\u79C0"
+  Sprite: {fileID: 0}
+  MaxHp: 100
+  CurHp: 100
+  MaxTp: 30
+  CurTp: 30
+  OriPA: 10
+  CurPA: 10
+  OriPD: 10
+  CurPD: 10
+  OriMA: 20
+  CurMA: 20
+  OriMD: 20
+  CurPMD: 20
+  skills:
+  - Name: "\u8BFB\u5FC3\u672F"
+    Desc: "\u964D\u4F4E\u654C\u65B9\u9B54\u6CD5\u9632\u5FA1\u5E76\u9020\u6210\u4E00\u5B9A\u9B54\u6CD5\u4F24\u5BB3"
+    Cost: 3
+    Count: 0
+  - Name: "\u4FDD\u9A7E\u62A4\u822A"
+    Desc: "\u9009\u62E9\u4E00\u540D\u89D2\u8272\u5728\u6536\u5230\u653B\u51FB\u65F6\u5E2E\u52A9\u5176\u8FDB\u884C\u683C\u6321"
+    Cost: 3
+    Count: 0

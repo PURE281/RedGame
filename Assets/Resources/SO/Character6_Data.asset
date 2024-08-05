@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ce0ecf12a00d9447b3a2975a501b6d0, type: 3}
+  m_Name: Character6_Data
+  m_EditorClassIdentifier: 
+  Id: 0
+  Name: "\u828A\u8BED"
+  Sprite: {fileID: 0}
+  MaxHp: 100
+  CurHp: 100
+  MaxTp: 30
+  CurTp: 30
+  OriPA: 10
+  CurPA: 10
+  OriPD: 10
+  CurPD: 10
+  OriMA: 20
+  CurMA: 20
+  OriMD: 20
+  CurPMD: 20
+  skills:
+  - Name: "\u72FC\u543C"
+    Desc: "\u964D\u4F4E\u654C\u65B9\u5927\u91CF\u7269\u9632\u5E76\u9020\u6210\u4F24\u5BB3"
+    Cost: 3
+    Count: 0
+    Type: 0
+  - Name: "\u821E\u52A8"
+    Desc: "\u4EE5\u821E\u8E48\u7684\u6B65\u4F10\u5BF9\u654C\u65B9\u9020\u6210\u5927\u91CF\u4F24\u5BB3"
+    Cost: 3
+    Count: 0
+    Type: 0

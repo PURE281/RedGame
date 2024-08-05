@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "E:\\UnityProject\\RedGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|e:\\unityproject\\redgame\\assets\\scripts\\utils\\csvmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\utils\\csvmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|E:\\UnityProject\\RedGame\\assets\\scripts\\battle\\battleuimgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battleuimgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|E:\\UnityProject\\RedGame\\assets\\scripts\\player\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|E:\\UnityProject\\RedGame\\assets\\scripts\\config\\scriptableobject\\socharacterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\config\\scriptableobject\\socharacterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|e:\\unityproject\\redgame\\assets\\scripts\\battle\\battlesystemmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battlesystemmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CsvManager.cs",
-              "DocumentMoniker": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Utils\\CsvManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Utils\\CsvManager.cs",
-              "ToolTip": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Utils\\CsvManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Utils\\CsvManager.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAApAAAA",
+              "DocumentIndex": 3,
+              "Title": "BattleSystemMgr.cs",
+              "DocumentMoniker": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Battle\\BattleSystemMgr.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\BattleSystemMgr.cs",
+              "ToolTip": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Battle\\BattleSystemMgr.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Battle\\BattleSystemMgr.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-02T10:20:28.312Z",
+              "WhenOpened": "2024-08-05T05:44:29.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SOCharacterData.cs",
+              "DocumentMoniker": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Config\\ScriptableObject\\SOCharacterData.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Config\\ScriptableObject\\SOCharacterData.cs",
+              "ToolTip": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Config\\ScriptableObject\\SOCharacterData.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Config\\ScriptableObject\\SOCharacterData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T03:30:32.591Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BattleUIMgr.cs",
+              "DocumentMoniker": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Battle\\BattleUIMgr.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\BattleUIMgr.cs",
+              "ToolTip": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Battle\\BattleUIMgr.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Battle\\BattleUIMgr.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAIwFEAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T03:05:27.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CharacterController.cs",
+              "DocumentMoniker": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Player\\CharacterController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\CharacterController.cs",
+              "ToolTip": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Player\\CharacterController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\CharacterController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-05T03:02:20.529Z",
               "EditorCaption": ""
             }
           ]
