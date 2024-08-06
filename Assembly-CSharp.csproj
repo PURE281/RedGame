@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Utils\EventCenter.cs" />
     <Compile Include="Assets\Scripts\Utils\PictureMgr.cs" />
+    <Compile Include="Assets\Scripts\Config\CustomEnums.cs" />
     <Compile Include="Assets\Scripts\Utils\MonoSingleton.cs" />
     <Compile Include="Assets\Scripts\Utils\Events\CustomEvent.cs" />
     <Compile Include="Assets\Scripts\Utils\EnumMgr.cs" />
@@ -74,8 +75,11 @@
     <Compile Include="Assets\Scripts\Utils\Toast\ToastHandler.cs" />
     <Compile Include="Assets\Scripts\Config\ScriptableObject\SOClipsData.cs" />
     <Compile Include="Assets\Scripts\Beans\CharacterInfoBean.cs" />
-    <Compile Include="Assets\Scripts\Utils\MusicManager.cs" />
     <Compile Include="Assets\Scripts\Battle\BattleSystemMgr.cs" />
+    <Compile Include="Assets\Scripts\Utils\MusicManager.cs" />
+    <Compile Include="Assets\Scripts\Utils\PopupManager.cs" />
+    <Compile Include="Assets\Scripts\Battle\BattleSceneMgr.cs" />
+    <Compile Include="Assets\Scripts\Battle\BattleBossAIMgr.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

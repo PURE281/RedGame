@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ce0ecf12a00d9447b3a2975a501b6d0, type: 3}
   m_Name: Character6_Data
   m_EditorClassIdentifier: 
-  Id: 0
+  Id: 6
   Name: "\u828A\u8BED"
   Sprite: {fileID: 0}
+  Level: 0
+  Exp: 0
   MaxHp: 100
-  CurHp: 100
+  CurHp: 120
   MaxTp: 30
   CurTp: 30
   OriPA: 10
@@ -26,15 +28,17 @@ MonoBehaviour:
   OriMA: 20
   CurMA: 20
   OriMD: 20
-  CurPMD: 20
+  CurMD: 20
   skills:
   - Name: "\u72FC\u543C"
     Desc: "\u964D\u4F4E\u654C\u65B9\u5927\u91CF\u7269\u9632\u5E76\u9020\u6210\u4F24\u5BB3"
     Cost: 3
     Count: 0
-    Type: 0
+    Value: 30
+    skillType: 12
   - Name: "\u821E\u52A8"
     Desc: "\u4EE5\u821E\u8E48\u7684\u6B65\u4F10\u5BF9\u654C\u65B9\u9020\u6210\u5927\u91CF\u4F24\u5BB3"
     Cost: 3
     Count: 0
-    Type: 0
+    Value: 50
+    skillType: 21
