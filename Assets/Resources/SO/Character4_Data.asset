@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ce0ecf12a00d9447b3a2975a501b6d0, type: 3}
+  m_Name: Character4_Data
+  m_EditorClassIdentifier: 
+  Id: 4
+  Name: "\u854A\u854A"
+  Sprite: {fileID: 0}
+  Level: 0
+  Exp: 0
+  MaxHp: 100
+  CurHp: 120
+  MaxTp: 30
+  CurTp: 30
+  OriPA: 10
+  CurPA: 10
+  OriPD: 10
+  CurPD: 10
+  OriMA: 20
+  CurMA: 20
+  OriMD: 20
+  CurMD: 20
+  skills:
+  - Name: "\u62A4\u76FE"
+    Desc: "\u4E3A\u6211\u65B9\u6240\u6709\u89D2\u8272\u63D0\u5347\u7269\u9632\u9B54\u9632\uFF0C\u5E76\u514D\u75AB\u4E00\u6B21\u81F4\u6B7B"
+    Cost: 3
+    Count: 0
+    Value: 20
+    skillType: 9
+  - Name: "\u4E2D\u6D41\u7825\u67F1"
+    Desc: "\u56DE\u590D\u6211\u65B9\u4E00\u540D\u89D2\u8272\u5927\u91CFtp"
+    Cost: 0
+    Count: 0
+    Value: 30
+    skillType: 18

@@ -9,7 +9,6 @@ public class ToastManager : MonoSington<ToastManager>
     public GameObject ToastPrefab;
     public List<ToastHandler> ToastList = new List<ToastHandler>();
 
-    private float Timer = 0;
     public float Interval;
 
     public Transform Parent;
@@ -25,7 +24,6 @@ public class ToastManager : MonoSington<ToastManager>
             ToastList.Remove(comp);
         });
 
-        Timer = 0;
 
         //有新的Toast出现，之前的Toast向上移动
         ToastMove(0.2f);
