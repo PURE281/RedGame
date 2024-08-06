@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1
   Name: "\u9759\u6021"
-  Sprite: {fileID: 0}
+  Sprite: {fileID: 21300000, guid: 8152316a44a7979459230d6cf02e8866, type: 3}
   Level: 0
   Exp: 0
   MaxHp: 100
-  CurHp: 120
+  CurHp: 100
   MaxTp: 30
   CurTp: 30
   OriPA: 10

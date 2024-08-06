@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fafa3d111c7c0647ae245a5390d705d, type: 3}
+  m_Name: 0-5
+  m_EditorClassIdentifier: 
+  dialoguePieces:
+  - ID: 0
+    image: {fileID: 1521061952, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u4E03\u4EBA"
+    text: "\u4E03\u7FBD\u517D\u4E5F\u8BA4\u51FA\u4E86\u8001\u677F\u662F\u6545\u4EBA\uFF1A\u201C\u94B1\u8001\uFF0C\u60A8\u7ADF\u662F\u8FD9\u513F\u7684\u8001\u677F\uFF1F\u5565\u65F6\u5019\u6765\u8FD9\u8FB9\u53D1\u5C55\u7684\uFF1F\u8FD9\u5E97\u9762\u53C8\u5927\u53C8\u8C6A\u534E\uFF0C\u751F\u610F\u505A\u5F97\u7EA2\u706B\u54DF\uFF01\u90FD\u505A\u5230\u6731\u96C0\u57CE\u5566\uFF01\u201D"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 8300000, guid: 6744ba5166501f24caec2fc97d55dd0d, type: 3}
+    bgImage: {fileID: 0}
+  - ID: 1
+    image: {fileID: 1521061952, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u65C1\u767D"
+    text: "\u539F\u6765\u6B64\u4EBA\u6B63\u662F\u5B81\u901A\u626C\u6D3E\u6765\u6697\u4E2D\u4FDD\u62A4\u4E03\u7FBD\u517D\u7684\u7BA1\u4E8B\u591A\u591A\uFF0C\u4E3A\u65B9\u4FBF\u884C\u4E8B\uFF0C\u4ED6\u6613\u5BB9\u6210\u4E03\u7FBD\u517D\u7684\u5FD8\u5E74\u4EA4\u94B1\u8001\u94B1\u591A\u591A\u3002\u56E0\u7CBE\u4E8E\u5546\u9053\uFF0C\u6545\u800C\u5F00\u4E86\u4E00\u5BB6\u8FDE\u9501\u8292\u679C\u5E97\uFF08\u806A\u660E\u4F36\u4FD0\u7684\u828A\u4ED9\u5B50\u81EA\u5C0F\u7531\u4ED6\u770B\u7740\u957F\u5927\uFF0C\u4ED6\u53C8\u65E0\u4EB2\u751F\u5973\u513F\uFF0C\u6545\u800C\u628A\u828A\u4ED9\u5B50\u5F53\u4F5C\u81EA\u5BB6\u5973\u513F\uFF0C\u6240\u4EE5\u5F00\u4E86\u8292\u679C\u5E97\uFF01\u5F53\u7136\uFF0C\u5176\u4ED6\u5B69\u5B50\u4ED6\u4E5F\u4E0A\u5FC3\uFF0C\u6BD5\u7ADF\u5979\u4EEC\u90FD\u662F\u795E\u517D\u5C71\u5E84\u7684\u5C11\u5E84\u4E3B\uFF0C\u662F\u5C71\u5E84\u7684\u672A\u6765\u5E0C\u671B\uFF01\uFF09"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 2
+    image: {fileID: 730919695, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u94B1\u591A\u591A"
+    text: "\u94B1\u591A\u591A\u9053\uFF1A\u201C\u5B69\u5B50\u4EEC\uFF0C\u6CA1\u60F3\u5230\u5728\u8FD9\u513F\u80FD\u78B0\u89C1\u4F60\u4EEC\uFF01\u6765\uFF0C\u8FD9\u7BB1\u8292\u679C\u9001\u7ED9\u4F60\u4EEC\uFF01\u5C31\u5F53\u8001\u94B1\u6211\u7ED9\u4F60\u4EEC\u7684\u89C1\u9762\u793C\uFF01\u201D\r\n"
+    isNpc: 1
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 3
+    image: {fileID: 1521061952, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u4E03\u4EBA"
+    text: "\u4E03\u7FBD\u517D\u9053\uFF1A\u201C\u94B1\u8001\uFF0C\u4F7F\u4E0D\u5F97\u54DF\uFF01\u867D\u8BF4\u76F8\u719F\uFF01\u5E08\u5C0A\u6559\u5BFC\u6211\u4EEC\u4E0D\u53EF\u5360\u4EBA\u4FBF\u5B9C\uFF01\u60A8\u8BF4\u4E2A\u4EF7\uFF01\u201D"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 4
+    image: {fileID: 730919695, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u94B1\u591A\u591A"
+    text: "\u94B1\u591A\u591A\u9053\uFF1A\u201C\u90A3\u5C31\u5341\u94B1\uFF0C\u610F\u601D\u4E00\u4E0B\u5C31\u884C\uFF01\u201D"
+    isNpc: 1
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 5
+    image: {fileID: 1521061952, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u4E03\u4EBA"
+    text: "\u4E03\u7FBD\u517D\u4EEC\u542C\u4E86\u4E0D\u7981\u7B11\u8D77\u6765\uFF0C\u5FC3\u91CC\u7422\u78E8\uFF1A\u94B1\u8001\uFF0C\u8FD9\u4EBA\u6709\u610F\u601D\uFF0C\u5BF9\u65C1\u4EBA\u90A3\u662F\u65A4\u65A4\u8BA1\u8F83\u3001\u4E00\u6BDB\u4E0D\u62D4\u7684\u94C1\u516C\u9E21\uFF01\u5BF9\u54B1\u4EEC\u5012\u662F\u539A\u9053\uFF01\u7B80\u76F4\u628A\u54B1\u4EEC\u5F53\u81EA\u5BB6\u4EBA\uFF01\u54C8\u54C8\u54C8\u2026\u2026"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 6
+    image: {fileID: 21300000, guid: e2bae2e813f6ed240818027496a7f4d7, type: 3}
+    speakerName: "\u828A\u4ED9\u5B50"
+    text: "\u828A\u6027\u683C\u76F4\u723D\uFF1A\u201C\u884C\uFF0C\u7ED9\u60A8\u5341\u94B1\uFF01\u94B1\u8001\uFF01\u201D\u7136\u540E\u62FF\u8D77\u4E00\u4E2A\u7F8E\u5473\u5927\u8292\u679C\u5927\u53E3\u5403\u8D77\u6765\uFF1A\u201C\u771F\u751C\uFF0C\u8FD8\u662F\u90A3\u4E2A\u5473\u513F\uFF01\u6211\u7684\u6700\u7231\uFF01\u201D\r"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 7
+    image: {fileID: 1521061952, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u65C1\u767D"
+    text: "\u77A7\u7740\u828A\u7684\u5403\u76F8\uFF0C\u94B1\u8001\u4E0E\u4F17\u59D0\u59B9\u4E5F\u90FD\u7B11\u5F00\u4E86\u6000\uFF01"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 8
+    image: {fileID: 1521061952, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u65C1\u767D"
+    text: "\u665A\u4E0A\uFF0C\u4F17\u4EBA\u53C8\u4E0E\u94B1\u8001\u5728\u6731\u96C0\u5927\u9152\u697C\u76F8\u805A\u5403\u559D\uFF01\u8BF4\u8D77\u8FC7\u53BB\u7684\u79CD\u79CD\u8DA3\u4E8B\uFF0C\u597D\u4E0D\u6B22\u4E50\uFF01\u5E78\u597D\u591A\u591A\u63D0\u524D\u505A\u8DB3\u4E86\u51C6\u5907\uFF0C\u4E0D\u7136\u8EAB\u4EFD\u5C31\u5F97\u9732\u9985\uFF01\r"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 9
+    image: {fileID: 1521061952, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u65C1\u767D"
+    text: "\u4F17\u4EBA\u53C8\u8C08\u8D77\u5E08\u5C0A\u8981\u5979\u4EEC\u5728\u6731\u96C0\u57CE\u5EFA\u7FBD\u517D\u95E8\u4E4B\u4E8B\uFF01"
+    isNpc: 1
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 8300000, guid: 35215711ed25c2d41b466b480352aad9, type: 3}
+    bgImage: {fileID: 0}

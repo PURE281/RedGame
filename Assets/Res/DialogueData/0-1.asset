@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fafa3d111c7c0647ae245a5390d705d, type: 3}
+  m_Name: 0-1
+  m_EditorClassIdentifier: 
+  dialoguePieces:
+  - ID: 0
+    image: {fileID: 1521061952, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u65C1\u767D"
+    text: "\u6C5F\u6E56\u4F20\u95FB\uFF0C\u6709\u4E03\u53EA\u6765\u81EA\u5404\u65B9\u7684\u7EDD\u7F8E\u7FBD\u517D\uFF01\u5B83\u4EEC\u6BDB\u8272\u5404\u5F02\uFF0C\u813E\u6027\u66F4\u662F\u5927\u4E0D\u76F8\u540C\uFF01\u4F46\u90FD\u5728\u90A3\u795E\u79D8\u4E14\u795E\u5723\u7684\u795E\u517D\u5C71\u5E84\uFF0C\u5E08\u4ECE\u6B66\u6797\u76DF\u4E3B\u5B81\u901A\u626C\uFF0C\u4E60\u5F97\u4E00\u8EAB\u8D85\u51E1\u6B66\u6280\uFF01"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 8300000, guid: 46879d1c205f2b046a48296a8b073398, type: 3}
+    bgImage: {fileID: 0}
+  - ID: 1
+    image: {fileID: 21300000, guid: 0e8ecd756d5915a42b5653dc6667bfc9, type: 3}
+    speakerName: "\u5E08\u5C0A"
+    text: "\u5F85\u4E03\u7FBD\u517D\u529F\u6210\u4E4B\u9645\uFF01\u5B81\u901A\u626C\u5BF9\u4E03\u7FBD\u517D\u8BF4\u9053\uFF1A\u201C\u5B69\u513F\u4EEC\uFF0C\u5C14\u7B49\u5DF2\u7136\u827A\u6EE1\uFF0C\u4E3A\u5E08\u76FC\u4F60\u4EEC\u524D\u5F80\u6731\u96C0\u57CE\u521B\u7ACB\u7FBD\u517D\u95E8\uFF0C\u4F20\u626C\u6C5F\u6E56\u6B63\u6C14\u4E0E\u9053\u4E49\uFF0C\u987A\u4FBF\u5728\u8FD9\u6C5F\u6E56\u95EF\u8361\u4E00\u756A\uFF01\u53EF\u613F\u524D\u5F80\uFF1F\u201D"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 2
+    image: {fileID: 1521061952, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u4E03\u7FBD\u517D"
+    text: "\u4E03\u7FBD\u517D\u9F50\u58F0\u9AD8\u547C\uFF1A\u201C\u5E08\u5C0A\uFF0C\u6211\u7B49\u7518\u613F\uFF01\u201D"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 3
+    image: {fileID: 21300000, guid: 0e8ecd756d5915a42b5653dc6667bfc9, type: 3}
+    speakerName: "\u5E08\u5C0A"
+    text: "\u5E08\u5C0A\u53EE\u5631\u9053\uFF1A\u201C\u90A3\u5C14\u7B49\u5B9A\u8981\u95EF\u4E0B\u8D6B\u8D6B\u58F0\u540D\uFF0C\u83AB\u8981\u8BA9\u4E3A\u5E08\u5931\u671B\uFF01\u8981\u6653\u5F97\uFF0C\u6C5F\u6E56\u98CE\u4E91\u53D8\u5E7B\uFF0C\u8BF8\u4E8B\u9700\u5C0F\u5FC3\u8C28\u614E\uFF01\u201D"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 4
+    image: {fileID: 1521061952, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u65C1\u767D"
+    text: "\u7FBD\u517D\u4EEC\u6536\u62FE\u597D\u884C\u56CA\uFF0C\u5373\u523B\u542F\u7A0B\u5954\u8D74\u6731\u96C0\u57CE\uFF01\u4E3A\u80FD\u5C3D\u65E9\u62B5\u8FBE\uFF0C\u5979\u4EEC\u7686\u4EE5\u7FBD\u517D\u4E4B\u8EAF\u632F\u7FC5\u9AD8\u98DE\u3002\u4E03\u53EA\u8272\u5F69\u7EDA\u70C2\u7684\u5C0F\u7FBD\u517D\u5728\u7A7A\u4E2D\u7FF1\u7FD4\uFF0C\u59FF\u6001\u98D8\u9038\uFF0C\u840C\u6001\u6BD5\u73B0\uFF01\r"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 5
+    image: {fileID: 1521061952, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u65C1\u767D"
+    text: "\u5230\u4E86\u6731\u96C0\u57CE\u5916\uFF0C\u4E03\u7FBD\u517D\u8C28\u8BB0\u5E08\u5C0A\u7684\u5631\u6258\uFF0C\u6DF1\u77E5\u6731\u96C0\u57CE\u5404\u65B9\u52BF\u529B\u9519\u7EFC\u590D\u6742\uFF0C\u884C\u4E8B\u5B9A\u8981\u4E07\u5206\u5C0F\u5FC3\u3002\u4E8E\u662F\uFF0C\u5979\u4EEC\u5E7B\u5316\u6210\u4E03\u4F4D\u8499\u7740\u8F7B\u7EB1\u7684\u5C11\u5973\uFF0C\u5C3D\u7BA1\u8EAB\u59FF\u66FC\u5999\uFF0C\u5374\u7528\u9762\u7EB1\u63A9\u4F4F\u5A07\u5BB9\uFF0C\u5DF2\u662F\u6781\u4E3A\u4F4E\u8C03\u3002"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 21300000, guid: d10a64510a3fced4593c7ac76a22d5e2, type: 3}
+  - ID: 6
+    image: {fileID: 1521061952, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u65C1\u767D"
+    text: "\u4E03\u4EBA\u521A\u8E0F\u5165\u6731\u96C0\u57CE\uFF0C\u77AC\u95F4\u7686\u88AB\u8FD9\u5EA7\u57CE\u6C60\u7684\u96C4\u4F1F\u58EE\u9614\u6240\u9707\u64BC\u3002"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 8300000, guid: b72abb5d3b75e144482005c3ff331b4c, type: 3}
+    bgImage: {fileID: 21300000, guid: 72e923b95c92d1842b5a36343fc90b3a, type: 3}

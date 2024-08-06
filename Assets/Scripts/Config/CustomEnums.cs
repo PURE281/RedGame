@@ -19,5 +19,7 @@ public enum SkillType
     HealOneHp,HealAllHp,RebornOne,RebornAll,
     HealOneTp,HealAllTp,
     Sleep,
+    PAtked,
+    MAtked,
     None
 }

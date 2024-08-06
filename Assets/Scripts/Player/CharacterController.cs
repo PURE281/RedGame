@@ -115,6 +115,11 @@ public class CharacterController : MonoSington<CharacterController>, IPointerEnt
                 break;
             case SkillType.None:
                 //无特殊效果
+                break;
+            case SkillType.PAtked:
+                character.CurHp -= value;
+                break;
+            case SkillType.MAtked:
                 character.CurHp -= value;
                 break;
         }

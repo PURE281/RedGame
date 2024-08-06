@@ -1,0 +1,111 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fafa3d111c7c0647ae245a5390d705d, type: 3}
+  m_Name: 0-4
+  m_EditorClassIdentifier: 
+  dialoguePieces:
+  - ID: 0
+    image: {fileID: 21300000, guid: ef1c25d25ffef15489ae1e40f045b47c, type: 3}
+    speakerName: "\u7490\u4ED9\u5B50"
+    text: "\u5C0F\u7490\u9053\uFF1A\u201C\u828A\u59D0\uFF0C\u90A3\u8FB9\u53C8\u5927\u53C8\u9999\u7684\u6C34\u679C\u83AB\u4E0D\u662F\u8292\u679C\uFF1F\u770B\u7740\u8BF1\u4EBA\u5F97\u5F88\u54DF\uFF01\u201D"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 1
+    image: {fileID: 730919695, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u4F19\u8BA1\u963F\u4E00"
+    text: "\u6B64\u65F6\u8292\u679C\u5E97\u4F19\u8BA1\u963F\u4E00\u9AD8\u558A\uFF1A\u201C\u53C8\u5927\u53C8\u751C\u7684\u65B0\u9C9C\u8292\u679C\uFF0C\u6731\u96C0\u57CE\u72EC\u6B64\u4E00\u5BB6\uFF0C\u5148\u4E70\u5148\u5F97\uFF0C\u5356\u5B8C\u4E3A\u6B62\uFF01\u201D"
+    isNpc: 1
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 2
+    image: {fileID: 21300000, guid: e2bae2e813f6ed240818027496a7f4d7, type: 3}
+    speakerName: "\u828A\u4ED9\u5B50"
+    text: "\u828A\u6D41\u7740\u53E3\u6C34\uFF0C\u4EE5\u767E\u7C73\u51B2\u523A\u7684\u901F\u5EA6\u51B2\u5411\u8292\u679C\u5E97\uFF1A\u201C\u4F19\u8BA1\uFF0C\u53EF\u6709\u7409\u7403\u4ED9\u5C9B\u51FA\u4EA7\u7684\u5927\u8292\u679C\uFF1F\u201D\r\n"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 3
+    image: {fileID: 730919695, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u4F19\u8BA1\u963F\u4E00"
+    text: "\u4F19\u8BA1\u963F\u4E00\u62B1\u6B49\u9053\uFF1A\u201C\u4E0D\u597D\u610F\u601D\u54DF\uFF0C\u8FD9\u4F4D\u4ED9\u5B50\uFF0C\u7409\u7403\u5927\u8292\u679C\u6628\u65E5\u5C31\u5356\u5149\u5566\uFF01\u8FD9\u8FB9\u5176\u4ED6\u54C1\u79CD\u7684\u8292\u679C\u4E5F\u4E0D\u9519\uFF0C\u8981\u4E0D\u60A8\u5C1D\u5C1D\uFF1F\u201D"
+    isNpc: 1
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 4
+    image: {fileID: 21300000, guid: e2bae2e813f6ed240818027496a7f4d7, type: 3}
+    speakerName: "\u828A\u4ED9\u5B50"
+    text: "\u828A\u53F9\u9053\uFF1A\u201C\u4E0D\u5FC5\u5566\uFF0C\u6211\u53EA\u5403\u7409\u7403\u5927\u8292\u679C\uFF0C\u65E9\u5C31\u4E60\u60EF\u4E86\uFF0C\u5176\u4ED6\u7684\u5403\u4E0D\u60EF\u54DF\uFF01\u201D\r\n"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 5
+    image: {fileID: 21300000, guid: e2bae2e813f6ed240818027496a7f4d7, type: 3}
+    speakerName: "\u828A\u4ED9\u5B50"
+    text: "\u828A\u4ED9\u5B50\u82E6\u607C\u5730\u957F\u53F9\u4E00\u58F0\uFF1A\u201C\u600E\u4E48\u6728\u6709\u8292\u679C\uFF1F\uFF08\u7409\u7403\u5927\u8292\u679C\u54DF\uFF01\uFF09\u201D"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 6
+    image: {fileID: 21300000, guid: d330074338e3c8042a90e171c56d29da, type: 3}
+    speakerName: "\u6C50\u4ED9\u5B50"
+    text: "\u6C50\u4ED9\u5B50\u9053\uFF1A\u201C\u963F\u828A\uFF0C\u7B97\u4E86\uFF0C\u660E\u65E5\u65E9\u70B9\u8FC7\u6765\u7785\u7785\uFF01\u201D"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 7
+    image: {fileID: 21300000, guid: e2bae2e813f6ed240818027496a7f4d7, type: 3}
+    speakerName: "\u828A\u4ED9\u5B50"
+    text: "\u828A\u4ED9\u5B50\u65E0\u5948\u9053\uFF1A\u201C\u5509\uFF01\u4E5F\u53EA\u80FD\u8FD9\u6837\u5566\uFF01\u201D"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 8
+    image: {fileID: 1521061952, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u65C1\u767D"
+    text: "\u5728\u5979\u4EEC\u5373\u5C06\u79BB\u5F00\u65F6\uFF0C\u8292\u679C\u5E97\u8001\u677F\u4ECE\u4ED3\u5E93\u91CC\u62FF\u51FA\u4E86\u4E00\u7BB1\u7409\u7403\u5927\u8292\u679C\uFF01\u4F46\u4EBA\u8FD8\u672A\u5230\u5E97\u9762\uFF0C\u6CA1\u77A7\u89C1\u4E03\u7FBD\u517D\uFF01\r"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 9
+    image: {fileID: 1521061952, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u65C1\u767D"
+    text: "\u638C\u67DC\u8FDC\u8FDC\u558A\u9053\uFF1A\u201C\u8FD9\u4F4D\u4ED9\u5B50\uFF0C\u7409\u7403\u5927\u8292\u679C\u8FD8\u6709\u4E00\u7BB1\uFF0C\u672C\u662F\u6211\u81EA\u7559\u9001\u4EBA\u7684\uFF0C\u65E2\u7136\u4ED9\u5B50\u559C\u6B22\uFF0C\u6211\u5C31\u4FBF\u5B9C\u70B9\u5356\u7ED9\u60A8\uFF0C\u5341\u4E2A\u91D1\u5E01\u4E00\u7BB1\uFF01\u201D"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
+  - ID: 10
+    image: {fileID: 21300000, guid: e2bae2e813f6ed240818027496a7f4d7, type: 3}
+    speakerName: "\u828A\u4ED9\u5B50"
+    text: "\u828A\u4ED9\u5B50\u542C\u4E86\u76F4\u5192\u6C57\uFF0C\u5FC3\u91CC\u6697\u60F3\uFF1A\u8FD9\u8001\u677F\u771F\u662F\u4E2A\u5978\u5546\uFF01\u4E00\u7BB1\u8981\u5341\u4E2A\u91D1\u5E01\uFF0C\u795E\u517D\u5C71\u5E84\u90A3\u8FB9\u624D\u5356\u4E00\u4E2A\u91D1\u5E01\uFF01"
+    isNpc: 0
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 8300000, guid: 35215711ed25c2d41b466b480352aad9, type: 3}
+    bgImage: {fileID: 0}
+  - ID: 11
+    image: {fileID: 730919695, guid: b0744e176e9f05f4d997b27ed4ac29b5, type: 3}
+    speakerName: "\u94B1\u591A\u591A"
+    text: "\u5F53\u8001\u677F\u73B0\u8EAB\uFF0C\u89C1\u5230\u4E03\u7FBD\u517D\uFF0C\u77AC\u95F4\u6EE1\u8138\u5806\u7B11\u5730\u5F00\u53E3\uFF1A\u201C\u963F\u6021\uFF0C\u963F\u79C0\uFF0C\u963F\u6C50\uFF0C\u963F\u854A\uFF0C\u963F\u6797\uFF0C\u963F\u828A\uFF0C\u5C0F\u7490\uFF01\u662F\u4F60\u4EEC\u54DF\uFF01\u201D"
+    isNpc: 1
+    characterClip: {fileID: 0}
+    bgmClip: {fileID: 0}
+    bgImage: {fileID: 0}
