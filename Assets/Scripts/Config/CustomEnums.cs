@@ -23,3 +23,8 @@ public enum SkillType
     MAtked,
     None
 }
+
+public enum CharacterType
+{
+    Player,Boss,Npc
+}

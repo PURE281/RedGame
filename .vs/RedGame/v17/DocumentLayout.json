@@ -3,15 +3,11 @@
   "WorkspaceRootPath": "E:\\UnityProject\\RedGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|E:\\UnityProject\\RedGame\\assets\\scripts\\battle\\battleuimgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battleuimgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|e:\\unityproject\\redgame\\assets\\scripts\\battle\\battlebossaimgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battlebossaimgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|e:\\unityproject\\redgame\\assets\\scripts\\battle\\battlesystemmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|E:\\UnityProject\\RedGame\\assets\\scripts\\battle\\battlesystemmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battlesystemmgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,15 +15,11 @@
       "RelativeMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\charactercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|E:\\UnityProject\\RedGame\\assets\\scripts\\battle\\battlescenemgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battlescenemgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|E:\\UnityProject\\RedGame\\assets\\scripts\\battle\\battleuimgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\battle\\battleuimgr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|E:\\UnityProject\\RedGame\\assets\\scripts\\config\\scriptableobject\\socharacterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\config\\scriptableobject\\socharacterdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|E:\\UnityProject\\RedGame\\assets\\scripts\\config\\customenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|e:\\unityproject\\redgame\\assets\\scripts\\config\\customenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{764D1FDB-55B3-DD86-E51C-4EA25687F928}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\config\\customenums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -38,95 +30,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BattleBossAIMgr.cs",
-              "DocumentMoniker": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Battle\\BattleBossAIMgr.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\BattleBossAIMgr.cs",
-              "ToolTip": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Battle\\BattleBossAIMgr.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Battle\\BattleBossAIMgr.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:32:41.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "BattleSceneMgr.cs",
-              "DocumentMoniker": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Battle\\BattleSceneMgr.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\BattleSceneMgr.cs",
-              "ToolTip": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Battle\\BattleSceneMgr.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Battle\\BattleSceneMgr.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAADwvwoAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:15:09.208Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "CustomEnums.cs",
               "DocumentMoniker": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Config\\CustomEnums.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Config\\CustomEnums.cs",
               "ToolTip": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Config\\CustomEnums.cs",
               "RelativeToolTip": "Assets\\Scripts\\Config\\CustomEnums.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAwAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvxwAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T01:42:22.208Z",
+              "WhenOpened": "2024-08-07T06:56:48.532Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "BattleBossAIMgr.cs",
+              "DocumentMoniker": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Battle\\BattleBossAIMgr.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\BattleBossAIMgr.cs",
+              "ToolTip": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Battle\\BattleBossAIMgr.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Battle\\BattleBossAIMgr.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAawAoAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-07T05:47:25.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "BattleSystemMgr.cs",
               "DocumentMoniker": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Battle\\BattleSystemMgr.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\BattleSystemMgr.cs",
               "ToolTip": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Battle\\BattleSystemMgr.cs",
               "RelativeToolTip": "Assets\\Scripts\\Battle\\BattleSystemMgr.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAAAFUAAAAAAAAA",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAtwFgAAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-05T05:44:29.875Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "SOCharacterData.cs",
-              "DocumentMoniker": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Config\\ScriptableObject\\SOCharacterData.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Config\\ScriptableObject\\SOCharacterData.cs",
-              "ToolTip": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Config\\ScriptableObject\\SOCharacterData.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Config\\ScriptableObject\\SOCharacterData.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAADwvxIAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T03:30:32.591Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "BattleUIMgr.cs",
               "DocumentMoniker": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Battle\\BattleUIMgr.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Battle\\BattleUIMgr.cs",
               "ToolTip": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Battle\\BattleUIMgr.cs",
               "RelativeToolTip": "Assets\\Scripts\\Battle\\BattleUIMgr.cs",
-              "ViewState": "AQIAANoAAAAAAAAAAAAswOcAAAAAAAAA",
+              "ViewState": "AQIAANwAAAAAAAAAAAAnwO0AAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-05T03:05:27.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "CharacterController.cs",
               "DocumentMoniker": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Player\\CharacterController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\CharacterController.cs",
               "ToolTip": "E:\\UnityProject\\RedGame\\Assets\\Scripts\\Player\\CharacterController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\CharacterController.cs",
-              "ViewState": "AQIAAEgAAAAAAAAAAAAtwBoAAAAbAAAA",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAcwJMAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-05T03:02:20.529Z",
               "EditorCaption": ""

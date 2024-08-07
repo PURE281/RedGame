@@ -9,6 +9,7 @@ public class SOCharacterData : ScriptableObject
 {
     public int Id;
     public string Name;
+    public CharacterType characterType;
     public Sprite Sprite;
     public int Level;
     public float Exp;

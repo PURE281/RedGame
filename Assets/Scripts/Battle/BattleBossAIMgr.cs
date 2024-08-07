@@ -8,16 +8,27 @@ using UnityEngine;
 /// </summary>
 public class BattleBossAIMgr : MonoSington<BattleBossAIMgr>
 {
+    bool isSleep = false;
     public void MoniAtk()
     {
-        int randType = new MinMaxRandomInt(0, 2).GetRandomValue();
-        if (randType == 0)
+        if (isSleep)
         {
-            this.AtkAll();
+            string tem = string.Format("停止活动一回合");
+            ToastManager.Instance.CreatToast(tem);
+            Debug.Log(tem);
+            isSleep = false;
         }
         else
         {
-            this.AtkOne();
+            int randType = new MinMaxRandomInt(0, 2).GetRandomValue();
+            if (randType == 0)
+            {
+                this.AtkAll();
+            }
+            else
+            {
+                this.AtkOne();
+            }
         }
         BattleSystemMgr.Instance?.ChangeBattleStatus(BattleStatus.PlayerTurn);
         BattleUIMgr.Instance?.EnableNextground();
@@ -28,7 +39,9 @@ public class BattleBossAIMgr : MonoSington<BattleBossAIMgr>
     {
         List<CharacterController> playerSelects = BattleUIMgr.Instance?.PlayerSelects;
         float demage = new MinMaxRandomFloat(10, 30).GetRandomValue();
-        ToastManager.Instance.CreatToast(string.Format("对全体造成{0}", demage));
+        string tem = string.Format("对全体造成{0}", demage);
+        ToastManager.Instance.CreatToast(tem);
+        Debug.Log(tem);
         foreach (CharacterController character in playerSelects)
         {
             character.HandleSkill(SkillType.PAtked, demage);
@@ -41,6 +54,13 @@ public class BattleBossAIMgr : MonoSington<BattleBossAIMgr>
         int selectedCharacter = new MinMaxRandomInt(0, 7).GetRandomValue();
         float demage = new MinMaxRandomFloat(10, 30).GetRandomValue();
         playerSelects[selectedCharacter].HandleSkill(SkillType.PAtked, demage);
-        ToastManager.Instance.CreatToast(string.Format("对{0}造成{1}", playerSelects[selectedCharacter].character.Name, demage));
+        string tem = string.Format("对{0}造成{1}", playerSelects[selectedCharacter].Character.Name, demage);
+        ToastManager.Instance.CreatToast(tem);
+        Debug.Log(tem);
+    }
+
+    public void SleepOneRound()
+    {
+        this.isSleep = true;
     }
 }

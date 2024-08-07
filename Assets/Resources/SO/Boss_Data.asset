@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 1
   Name: "\u5343\u9762\u4EBA"
+  characterType: 1
   Sprite: {fileID: 0}
+  Level: 0
+  Exp: 0
   MaxHp: 500
   CurHp: 500
   MaxTp: 300

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
+using UnityEngine.UI;
 using static UnityEditor.Progress;
 
 /// <summary>
@@ -52,15 +53,15 @@ public class BattleSystemMgr : MonoSington<BattleSystemMgr>
     {
         if (selectedCharacter != null)
         {
-            selectedCharacter.HandleSkill(skill.skillType,skill.Value);
-            Debug.Log(string.Format("{0}对{1}使用 {2}", selectCharacter.character.Name, selectedCharacter.character.Name, skill.skillType));
+            selectedCharacter.HandleSkill(skill.skillType, skill.Value);
+            Debug.Log(string.Format("{0}对{1}使用 {2}", selectCharacter.Character.Name, selectedCharacter.Character.Name, skill.skillType));
         }
         else
         {
             foreach (var character in BattleUIMgr.Instance?.PlayerSelects)
             {
                 character.HandleSkill(skill.skillType, skill.Value);
-                Debug.Log(string.Format("{0}对全体使用 {1}", selectCharacter.character.Name, skill.skillType));
+                Debug.Log(string.Format("{0}对全体使用 {1}", selectCharacter.Character.Name, skill.skillType));
             }
         }
     }
@@ -79,6 +80,15 @@ public class BattleSystemMgr : MonoSington<BattleSystemMgr>
                 break;
             case BattleStatus.PlayerTurn:
                 //玩家回合,允许对角色进行控制
+                //恢复所有的toggle的interactable
+                List<CharacterController> playerSelects = BattleUIMgr.Instance?.PlayerSelects;
+                foreach (var character in playerSelects)
+                {
+                    if (character.CharacterHp.value > 0)
+                    {
+                        character.gameObject.GetComponent<Toggle>().interactable = true;
+                    }
+                }
                 break;
             case BattleStatus.BossTurn:
                 //敌方回合,AI
@@ -87,18 +97,41 @@ public class BattleSystemMgr : MonoSington<BattleSystemMgr>
                 break;
             case BattleStatus.Win:
                 //玩家胜利,展示胜利界面
+                ToastManager.Instance?.CreatToast("player win");
                 break;
             case BattleStatus.Lose:
                 //敌方胜利,展示失败界面
+                ToastManager.Instance?.CreatToast("player lose");
                 break;
             case BattleStatus.End:
-                //战斗结束
+                //战斗结束，结算画面
+
                 break;
         }
     }
-    public void CheckisWin()
+    public void CheckWin(CharacterType characterType)
     {
-
+        switch (characterType)
+        {
+            case CharacterType.Player:
+                List<CharacterController> playerSelects = BattleUIMgr.Instance?.PlayerSelects;
+                foreach (var item in playerSelects)
+                {
+                    if (item.GetComponent<Toggle>().interactable)
+                    {
+                        return;
+                    }
+                }
+                //player lose
+                this.ChangeBattleStatus(BattleStatus.Lose);
+                break;
+            case CharacterType.Boss:
+                //player win 
+                this.ChangeBattleStatus(BattleStatus.Win);
+                break;
+            case CharacterType.Npc:
+                break;
+        }
     }
 
 

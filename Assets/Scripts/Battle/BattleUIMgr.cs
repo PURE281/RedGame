@@ -67,23 +67,29 @@ public class BattleUIMgr : MonoSington<BattleUIMgr>
         SOCharacterData[] sOCharacterDatas = BattleSystemMgr.Instance?.AllCharacterDatas;
         //动态加载boss信息
         SOCharacterData bossData = BattleSystemMgr.Instance?.BossDatas;
-        _bossPanel.GetComponentInChildren<CharacterController>().character = bossData;
+        _bossPanel.GetComponentInChildren<CharacterController>().Character = bossData;
+        _bossPanel.GetComponentInChildren<CharacterController>().CharacterHp = _bossPanel.GetComponentInChildren<Slider>();
         //动态添加监听事件
         Toggle[] _playerSelectsbuttons = _playerSelectPanel.GetComponentsInChildren<Toggle>();
         Toggle[] _playerSelectedsbuttons = _playerSelectedPanel.GetComponentsInChildren<Toggle>();
+        Slider[] _playerHpSliders = _playerPanel.GetComponentsInChildren<Slider>();
         for (int i = 0; i < _playerSelectsbuttons.Length; i++)
         {
+            //添加角色控制类，同时绑定相应UI
             _playerSelectsbuttons[i].AddComponent<CharacterController>();
             CharacterController characterController = _playerSelectsbuttons[i].GetComponent<CharacterController>();
             _curSelectCharacter = characterController;
             _playerSelects.Add(characterController);
             SOCharacterData sOCharacterData = sOCharacterDatas[i];
-            characterController.character = sOCharacterData;
+            characterController.Character = sOCharacterData;
+            characterController.CharacterHp = _playerHpSliders[i];
+            characterController.AddSliderListener();
             _playerSelectsbuttons[i].onValueChanged.AddListener((value) =>
             {
                 if (value)
                 {
-                    _curSelectCharacter.character = sOCharacterData;
+                    _curSelectCharacter = characterController;
+                    //_curSelectCharacter.Character = sOCharacterData;
                     this.UpdateSelectCharacterUI(sOCharacterData);
                 }
             });
@@ -93,7 +99,7 @@ public class BattleUIMgr : MonoSington<BattleUIMgr>
                 if (value)
                 {
                     _curSelectedCharacter = selectedcharacterController;
-                    _curSelectedCharacter.character = sOCharacterData;
+                    //_curSelectedCharacter.Character = sOCharacterData;
                 }
             });
         }
@@ -107,8 +113,6 @@ public class BattleUIMgr : MonoSington<BattleUIMgr>
         {
             this.CloseIsExcutePanel();
         });
-        this.UpdateSelectCharacterUI(sOCharacterDatas[0]);
-        _curSelectCharacter.character = sOCharacterDatas[0];
     }
 
 
@@ -215,6 +219,7 @@ public class BattleUIMgr : MonoSington<BattleUIMgr>
             return;
         }
         BattleSystemMgr.Instance?.ExcuteSkill(skillInfo, selectCharacter, selectedCharacter);
+        selectCharacter.gameObject.GetComponent<Toggle>().interactable = false;
         this.CloseIsExcutePanel();
     }
     public void ShowIsExcutePanel()
@@ -234,4 +239,7 @@ public class BattleUIMgr : MonoSington<BattleUIMgr>
     {
         GameObject.FindGameObjectWithTag("MainCanvas").transform.Find("NextGround").GetComponent<Button>().interactable = true;
     }
+
+
+
 }
