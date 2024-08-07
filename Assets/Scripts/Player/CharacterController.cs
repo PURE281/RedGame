@@ -22,7 +22,10 @@ public class CharacterController : MonoSington<CharacterController>, IPointerEnt
         {
             if (value <= 0)
             {
-                this.gameObject.GetComponent<Toggle>().interactable = false;
+                if (character.characterType==CharacterType.Player)
+                {
+                    this.gameObject.GetComponent<Toggle>().interactable = false;
+                }
                 //判断是否判断成功
                 BattleSystemMgr.Instance?.CheckWin(this.character.characterType);
             }
@@ -46,6 +49,12 @@ public class CharacterController : MonoSington<CharacterController>, IPointerEnt
 
     public void HandleSkill(SkillType skillType, float value)
     {
+        if (BattleSystemMgr.Instance?.BattleStatus == BattleStatus.PlayerTurn)
+        {
+            ToggleGroup toggleGroup = BattleUIMgr.Instance.PlayerSelectPanel.GetComponent<ToggleGroup>();
+            toggleGroup.SetAllTogglesOff();
+            BattleUIMgr.Instance?.UpdateSelectCharacterUI();
+        }
         float damege = 0;
         switch (skillType)
         {
@@ -110,11 +119,20 @@ public class CharacterController : MonoSington<CharacterController>, IPointerEnt
             case SkillType.HealOneHp:
                 //增加血量
                 Character.CurHp += value;
+
+                if (Character.CurHp >= Character.MaxHp)
+                {
+                    Character.CurHp = Character.MaxHp;
+                }
                 characterHp.DOValue((Character.CurHp / Character.MaxHp), 0.5f);
                 break;
             case SkillType.HealAllHp:
                 //增加血量
                 Character.CurHp += value;
+                if (Character.CurHp >= Character.MaxHp)
+                {
+                    Character.CurHp = Character.MaxHp;
+                }
                 characterHp.DOValue((Character.CurHp / Character.MaxHp), 0.5f);
                 break;
             case SkillType.RebornOne:
@@ -139,7 +157,7 @@ public class CharacterController : MonoSington<CharacterController>, IPointerEnt
                 break;
             case SkillType.Sleep:
                 //跳过一回合
-                if (character.characterType==CharacterType.Player)
+                if (character.characterType == CharacterType.Player)
                 {
                     BattleBossAIMgr.Instance?.SleepOneRound();
                 }
@@ -152,15 +170,33 @@ public class CharacterController : MonoSington<CharacterController>, IPointerEnt
                 //无特殊效果
                 break;
             case SkillType.PAtked:
-                damege = (value - character.CurPD)<=0?0: (value - character.CurPD);
+                if (value == 0)
+                {
+                    //说明需要获取释放技能的人的数据
+                    value = BattleSystemMgr.Instance.CurSelectCharacter.character.CurPA;
+                }
+                else
+                {
+                    value += BattleSystemMgr.Instance.CurSelectCharacter.character.CurPA;
+                }
+                damege = (value - character.CurPD) <= 0 ? 0 : (value - character.CurPD);
                 Character.CurHp -= damege;
-                if (Character.CurHp<=0)
+                if (Character.CurHp <= 0)
                 {
                     Character.CurHp = 0;
                 }
-                characterHp.DOValue((Character.CurHp/Character.MaxHp),0.5f);
+                characterHp.DOValue((Character.CurHp / Character.MaxHp), 0.5f);
                 break;
             case SkillType.MAtked:
+                if (value == 0)
+                {
+                    //说明需要获取释放技能的人的数据
+                    value = BattleSystemMgr.Instance.CurSelectCharacter.character.CurMA;
+                }
+                else
+                {
+                    value += BattleSystemMgr.Instance.CurSelectCharacter.character.CurMA;
+                }
                 damege = (value - character.CurMD) <= 0 ? 0 : (value - character.CurMD);
                 Character.CurHp -= damege;
                 if (Character.CurHp <= 0)

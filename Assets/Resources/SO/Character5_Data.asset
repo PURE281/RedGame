@@ -14,22 +14,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Id: 5
   Name: "\u96E8\u6797"
+  characterType: 0
   Sprite: {fileID: 21300000, guid: cb2aece4034c3ca439106a0b89c8be4f, type: 3}
-  Level: 0
+  Level: 1
   Exp: 0
   MaxHp: 100
   CurHp: 100
   MaxTp: 30
   CurTp: 30
-  OriPA: 10
-  CurPA: 10
-  OriPD: 10
-  CurPD: 10
+  OriPA: 20
+  CurPA: 20
+  OriPD: 20
+  CurPD: 20
   OriMA: 20
   CurMA: 20
   OriMD: 20
   CurMD: 20
   skills:
+  - Name: "\u7269\u7406\u653B\u51FB"
+    Desc: "\u5411\u654C\u65B9\u8BA4\u51FA\u4E00\u4E2A\u8282\u76EEzou"
+    Cost: 0
+    Count: 0
+    Value: 0
+    skillType: 21
+  - Name: "\u7CBE\u795E\u653B\u51FB"
+    Desc: "\u4EE5\u201C\u7CBE\u6E5B\u201D\u7684\u6F14\u6280\u8FF7\u60D1\u654C\u4EBA\uFF0C\u9020\u6210\u4E00\u5B9A\u4F24\u5BB3"
+    Cost: 0
+    Count: 0
+    Value: 0
+    skillType: 22
   - Name: "\u52A8\u7269\u4E4B\u58F0"
     Desc: "\u53EC\u5524\u52A8\u7269\u7FA4\u5BF9\u654C\u65B9\u9020\u6210\u4F24\u5BB3"
     Cost: 3

@@ -27,23 +27,19 @@ public class BattleUIMgr : MonoSington<BattleUIMgr>
     private Button[] _playerCmdBtns;
     private Text _playerCmdDesc;
 
-    private CharacterController _curSelectCharacter;
-    private CharacterController _curSelectedCharacter;
-    private SkillInfo _curSelectSkillInfo;
-    List<CharacterController> _playerSelects;
+    public GameObject PlayerSelectPanel { get => _playerSelectPanel; }
 
-    public List<CharacterController> PlayerSelects { get => _playerSelects; }
+
 
     // Start is called before the first frame update
     public void Init()
     {
-        _playerSelects = new List<CharacterController>();
         //动态添加菜单功能键
         _MenuPanel.transform.GetChild(1).GetChild(0).GetComponent<Button>().onClick.AddListener(() =>
         {
             //添加重新开始
             SceneManager.LoadScene("BattleScene");
-        }); 
+        });
         _MenuPanel.transform.GetChild(1).GetChild(1).GetComponent<Button>().onClick.AddListener(() =>
         {
             //添加重新开始
@@ -63,14 +59,20 @@ public class BattleUIMgr : MonoSington<BattleUIMgr>
         GameObject _playerCmdPanel = _mainCanvas.transform.Find("PlayerCmdPanel").gameObject;
         _playerCmdBtns = _playerCmdPanel.GetComponentsInChildren<Button>();
         _playerCmdDesc = _playerCmdPanel.transform.Find("DescPanel").GetComponentInChildren<Text>();
+
         //动态加载角色信息
         SOCharacterData[] sOCharacterDatas = BattleSystemMgr.Instance?.AllCharacterDatas;
+
         //动态加载boss信息
         SOCharacterData bossData = BattleSystemMgr.Instance?.BossDatas;
+        BattleSystemMgr.Instance.BossController = _bossPanel.GetComponentInChildren<CharacterController>();
+        BattleSystemMgr.Instance.BossController.CharacterHp = _bossPanel.GetComponentInChildren<Slider>(); ;
         _bossPanel.GetComponentInChildren<CharacterController>().Character = bossData;
         _bossPanel.GetComponentInChildren<CharacterController>().CharacterHp = _bossPanel.GetComponentInChildren<Slider>();
+        _bossPanel.GetComponentInChildren<CharacterController>().AddSliderListener();
+
         //动态添加监听事件
-        Toggle[] _playerSelectsbuttons = _playerSelectPanel.GetComponentsInChildren<Toggle>();
+        Toggle[] _playerSelectsbuttons = PlayerSelectPanel.GetComponentsInChildren<Toggle>();
         Toggle[] _playerSelectedsbuttons = _playerSelectedPanel.GetComponentsInChildren<Toggle>();
         Slider[] _playerHpSliders = _playerPanel.GetComponentsInChildren<Slider>();
         for (int i = 0; i < _playerSelectsbuttons.Length; i++)
@@ -78,8 +80,8 @@ public class BattleUIMgr : MonoSington<BattleUIMgr>
             //添加角色控制类，同时绑定相应UI
             _playerSelectsbuttons[i].AddComponent<CharacterController>();
             CharacterController characterController = _playerSelectsbuttons[i].GetComponent<CharacterController>();
-            _curSelectCharacter = characterController;
-            _playerSelects.Add(characterController);
+            BattleSystemMgr.Instance.CurSelectCharacter = characterController;
+            BattleSystemMgr.Instance.PlayerSelects.Add(characterController);
             SOCharacterData sOCharacterData = sOCharacterDatas[i];
             characterController.Character = sOCharacterData;
             characterController.CharacterHp = _playerHpSliders[i];
@@ -88,9 +90,16 @@ public class BattleUIMgr : MonoSington<BattleUIMgr>
             {
                 if (value)
                 {
-                    _curSelectCharacter = characterController;
+                    characterController.transform.DOScale(1.2f, 0.3f);
+                    characterController.CharacterHp.transform.parent.DOScale(1.2f, 0.3f);
+                    BattleSystemMgr.Instance.CurSelectCharacter = characterController;
                     //_curSelectCharacter.Character = sOCharacterData;
                     this.UpdateSelectCharacterUI(sOCharacterData);
+                }
+                else
+                {
+                    characterController.transform.DOScale(1f, 0.3f);
+                    characterController.CharacterHp.transform.parent.DOScale(1f, 0.3f);
                 }
             });
             CharacterController selectedcharacterController = _playerSelectsbuttons[i].GetComponent<CharacterController>();
@@ -98,7 +107,7 @@ public class BattleUIMgr : MonoSington<BattleUIMgr>
             {
                 if (value)
                 {
-                    _curSelectedCharacter = selectedcharacterController;
+                    BattleSystemMgr.Instance.CurSelectedCharacter = selectedcharacterController;
                     //_curSelectedCharacter.Character = sOCharacterData;
                 }
             });
@@ -107,12 +116,13 @@ public class BattleUIMgr : MonoSington<BattleUIMgr>
         Button[] _tembtns = _isExcutePanel.GetComponentsInChildren<Button>();
         _tembtns[0].onClick.AddListener(() =>
         {
-            this.ExcuteSkill(_curSelectSkillInfo,_curSelectCharacter,_curSelectedCharacter);
+            this.ExcuteSkill(BattleSystemMgr.Instance.CurSelectSkillInfo, BattleSystemMgr.Instance.CurSelectCharacter, BattleSystemMgr.Instance.CurSelectedCharacter);
         });
         _tembtns[1].onClick.AddListener(() =>
         {
             this.CloseIsExcutePanel();
         });
+        this.UpdateSelectCharacterUI();
     }
 
 
@@ -120,31 +130,60 @@ public class BattleUIMgr : MonoSington<BattleUIMgr>
     /// 用来更新当前选择的角色信息的方法
     /// </summary>
     /// <param name="characterInfo"></param>
-    public void UpdateSelectCharacterUI(SOCharacterData characterInfo)
+    public void UpdateSelectCharacterUI(SOCharacterData characterInfo = null)
     {
+        MusicManager.Instance?.PlayClipByIndex(0);
         for (int i = 0; i < _playerCmdBtns.Length; i++)
         {
-            if (i < characterInfo.skills.Count)
+            _playerCmdBtns[i].onClick.RemoveAllListeners();
+            _playerCmdBtns[i].GetComponent<EventTrigger>().triggers.RemoveRange(0, _playerCmdBtns[i].GetComponent<EventTrigger>().triggers.Count);
+
+            if (characterInfo == null)
             {
-                _playerCmdBtns[i].GetComponentInChildren<Text>().text = characterInfo.skills[i].Name;
-                _playerCmdBtns[i].onClick.RemoveAllListeners();
-                _playerCmdBtns[i].GetComponent<EventTrigger>().triggers.RemoveRange(0, _playerCmdBtns[i].GetComponent<EventTrigger>().triggers.Count);
-                SkillInfo skillInfo = characterInfo.skills[i];
-                this.AddEventTriggerFun(_playerCmdBtns[i].GetComponent<EventTrigger>(), EventTriggerType.PointerEnter, (data) =>
-                {
-                    _playerCmdDesc.text = (skillInfo.Desc);
-                });
-                _playerCmdBtns[i].onClick.AddListener(() =>
-                {
-                    _curSelectSkillInfo = skillInfo;
-                    //还需要根据技能选择人物和是否发动
-                    this.HintSkillForWho(skillInfo);
-                });
+                _playerCmdBtns[i].interactable = false;
+                _playerCmdBtns[i].GetComponentInChildren<Text>().text = "";
+                _playerCmdDesc.text = "";
+                continue;
             }
             else
             {
-                _playerCmdBtns[i].gameObject.SetActive(false);
+                _playerCmdBtns[i].interactable = true;
             }
+            _playerCmdBtns[i].GetComponentInChildren<Text>().text = characterInfo.skills[i].Name;
+            SkillInfo skillInfo = characterInfo.skills[i];
+            this.AddEventTriggerFun(_playerCmdBtns[i].GetComponent<EventTrigger>(), EventTriggerType.PointerEnter, (data) =>
+            {
+                _playerCmdDesc.text = (skillInfo.Desc);
+            });
+            _playerCmdBtns[i].onClick.AddListener(() =>
+            {
+                BattleSystemMgr.Instance.CurSelectSkillInfo = skillInfo;
+                //还需要根据技能选择人物和是否发动
+                this.HintSkillForWho(skillInfo);
+            });
+            #region 原计划技能不写满的逻辑
+            //if (i < characterInfo.skills.Count)
+            //{
+            //    _playerCmdBtns[i].GetComponentInChildren<Text>().text = characterInfo.skills[i].Name;
+            //    _playerCmdBtns[i].onClick.RemoveAllListeners();
+            //    _playerCmdBtns[i].GetComponent<EventTrigger>().triggers.RemoveRange(0, _playerCmdBtns[i].GetComponent<EventTrigger>().triggers.Count);
+            //    SkillInfo skillInfo = characterInfo.skills[i];
+            //    this.AddEventTriggerFun(_playerCmdBtns[i].GetComponent<EventTrigger>(), EventTriggerType.PointerEnter, (data) =>
+            //    {
+            //        _playerCmdDesc.text = (skillInfo.Desc);
+            //    });
+            //    _playerCmdBtns[i].onClick.AddListener(() =>
+            //    {
+            //        BattleSystemMgr.Instance.CurSelectSkillInfo = skillInfo;
+            //        //还需要根据技能选择人物和是否发动
+            //        this.HintSkillForWho(skillInfo);
+            //    });
+            //}
+            //else
+            //{
+            //    _playerCmdBtns[i].gameObject.SetActive(false);
+            //}
+            #endregion
         }
     }/// <summary>
      /// 用来更新当前选择的角色信息的方法
@@ -155,7 +194,7 @@ public class BattleUIMgr : MonoSington<BattleUIMgr>
         Toggle[] toggles = _playerSelectedPanel.GetComponentsInChildren<Toggle>();
         for (int i = 0; i < toggles.Length; i++)
         {
-            
+
         }
     }
     public void ShowPlayerDetailInfo(string info)
@@ -199,7 +238,7 @@ public class BattleUIMgr : MonoSington<BattleUIMgr>
         else
         {
             //只需要提示是否执行
-            _curSelectedCharacter = null;
+            BattleSystemMgr.Instance.CurSelectedCharacter = null;
             this.ShowIsExcutePanel();
         }
 
@@ -213,11 +252,7 @@ public class BattleUIMgr : MonoSington<BattleUIMgr>
     }
     public void ExcuteSkill(SkillInfo skillInfo, CharacterController selectCharacter, CharacterController selectedCharacter)
     {
-        if(skillInfo.skillType.ToString().Contains("One") && _curSelectedCharacter == null)
-        {
-            ToastManager.Instance?.CreatToast("请选择一个目标角色！");
-            return;
-        }
+
         BattleSystemMgr.Instance?.ExcuteSkill(skillInfo, selectCharacter, selectedCharacter);
         selectCharacter.gameObject.GetComponent<Toggle>().interactable = false;
         this.CloseIsExcutePanel();

@@ -10,6 +10,7 @@ public class BattleSceneMgr : MonoSington<BattleSceneMgr>
         PopupManager.Instance?.Init();
         BattleSystemMgr.Instance?.Init();
         BattleSystemMgr.Instance?.ChangeBattleStatus(BattleStatus.Init);
+        BattleSystemMgr.Instance?.ChangeBattleStatus(BattleStatus.PlayerTurn);
     }
 
 }

@@ -18,16 +18,16 @@ MonoBehaviour:
   Sprite: {fileID: 0}
   Level: 0
   Exp: 0
-  MaxHp: 500
-  CurHp: 500
-  MaxTp: 300
-  CurTp: 300
-  OriPA: 50
-  CurPA: 50
-  OriPD: 50
-  CurPD: 50
-  OriMA: 50
-  CurMA: 50
-  OriMD: 50
-  CurMD: 50
+  MaxHp: 200
+  CurHp: 200
+  MaxTp: 100
+  CurTp: 100
+  OriPA: 10
+  CurPA: 10
+  OriPD: 10
+  CurPD: 10
+  OriMA: 10
+  CurMA: 10
+  OriMD: 10
+  CurMD: 10
   skills: []

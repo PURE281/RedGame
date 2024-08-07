@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3327f5b88e462fb4e9cb16c8068da49e, type: 3}
+  m_Name: Bgms_Data
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 46879d1c205f2b046a48296a8b073398, type: 3}
+  - {fileID: 8300000, guid: 6744ba5166501f24caec2fc97d55dd0d, type: 3}
+  - {fileID: 8300000, guid: b72abb5d3b75e144482005c3ff331b4c, type: 3}
+  - {fileID: 8300000, guid: 35215711ed25c2d41b466b480352aad9, type: 3}
+  - {fileID: 8300000, guid: e299424a6ce0c724185da47580982be7, type: 3}
+  - {fileID: 8300000, guid: d2c739ca3ceb65347b8c302b231ebcd3, type: 3}
+  - {fileID: 8300000, guid: 86560551e6190b64dbeadf2f6c455210, type: 3}
+  - {fileID: 8300000, guid: b75aaa965b5b1364987419b3f2fef122, type: 3}
+  - {fileID: 8300000, guid: 2dd7a30a4252ac94daab825d54badb7a, type: 3}
+  - {fileID: 0}
+  desc: []

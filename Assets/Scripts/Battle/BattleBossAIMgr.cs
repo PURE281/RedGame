@@ -20,6 +20,7 @@ public class BattleBossAIMgr : MonoSington<BattleBossAIMgr>
         }
         else
         {
+            MusicManager.Instance?.PlayClipByIndex(1);
             int randType = new MinMaxRandomInt(0, 2).GetRandomValue();
             if (randType == 0)
             {
@@ -37,7 +38,7 @@ public class BattleBossAIMgr : MonoSington<BattleBossAIMgr>
 
     public void AtkAll()
     {
-        List<CharacterController> playerSelects = BattleUIMgr.Instance?.PlayerSelects;
+        List<CharacterController> playerSelects = BattleSystemMgr.Instance?.PlayerSelects;
         float demage = new MinMaxRandomFloat(10, 30).GetRandomValue();
         string tem = string.Format("对全体造成{0}", demage);
         ToastManager.Instance.CreatToast(tem);
@@ -50,7 +51,7 @@ public class BattleBossAIMgr : MonoSington<BattleBossAIMgr>
     }
     public void AtkOne()
     {
-        List<CharacterController> playerSelects = BattleUIMgr.Instance?.PlayerSelects;
+        List<CharacterController> playerSelects = BattleSystemMgr.Instance?.PlayerSelects;
         int selectedCharacter = new MinMaxRandomInt(0, 7).GetRandomValue();
         float demage = new MinMaxRandomFloat(10, 30).GetRandomValue();
         playerSelects[selectedCharacter].HandleSkill(SkillType.PAtked, demage);
