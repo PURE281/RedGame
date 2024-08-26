@@ -15,8 +15,6 @@ public class CheckPlatform : MonoBehaviour
 
     void Awake()
     {
-
-        GlobalConfig.Instance.Platform = 1;
 //#if UNITY_EDITOR_WIN
 //#else
 //        int a = GetUA();

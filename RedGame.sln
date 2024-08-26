@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{4C45B583-414F-22CA-68A1-2E0DC63F6CB3}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomElementsSystemAssembly", "RandomElementsSystemAssembly.csproj", "{979DBA09-B406-12CB-A308-6DAE5FF3FD8D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{764D1FDB-55B3-DD86-E51C-4EA25687F928}"
@@ -8,8 +10,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spine-unity", "spine-unity.csproj", "{8C542BCA-F14D-54AC-5B5A-6585CA8853DC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spine-csharp", "spine-csharp.csproj", "{56D1973D-72D2-4C3C-B40A-4CF72CB6CE03}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-firstpass", "Assembly-CSharp-firstpass.csproj", "{4C45B583-414F-22CA-68A1-2E0DC63F6CB3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spine-unity-editor", "spine-unity-editor.csproj", "{1B4A4AC7-E2AA-5091-A587-280E07A3D18D}"
 EndProject
@@ -21,6 +21,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C45B583-414F-22CA-68A1-2E0DC63F6CB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C45B583-414F-22CA-68A1-2E0DC63F6CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C45B583-414F-22CA-68A1-2E0DC63F6CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C45B583-414F-22CA-68A1-2E0DC63F6CB3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{979DBA09-B406-12CB-A308-6DAE5FF3FD8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{979DBA09-B406-12CB-A308-6DAE5FF3FD8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{979DBA09-B406-12CB-A308-6DAE5FF3FD8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -37,10 +41,6 @@ Global
 		{56D1973D-72D2-4C3C-B40A-4CF72CB6CE03}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56D1973D-72D2-4C3C-B40A-4CF72CB6CE03}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56D1973D-72D2-4C3C-B40A-4CF72CB6CE03}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4C45B583-414F-22CA-68A1-2E0DC63F6CB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C45B583-414F-22CA-68A1-2E0DC63F6CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C45B583-414F-22CA-68A1-2E0DC63F6CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C45B583-414F-22CA-68A1-2E0DC63F6CB3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1B4A4AC7-E2AA-5091-A587-280E07A3D18D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1B4A4AC7-E2AA-5091-A587-280E07A3D18D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B4A4AC7-E2AA-5091-A587-280E07A3D18D}.Release|Any CPU.ActiveCfg = Release|Any CPU
