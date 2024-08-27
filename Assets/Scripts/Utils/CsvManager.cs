@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using zFramework.Extension;
+//using zFramework.Extension;
 using static EnumMgr;
 
 public class CsvManager : Singleton<CsvManager>
@@ -14,7 +14,8 @@ public class CsvManager : Singleton<CsvManager>
     {
         try
         {
-            return CsvUtility.Read<SlotsBean>((GlobalConfig.Instance?.GetPath() + "/StreamingAssets") + "/" + "CardData.csv");
+            return null;
+            //return CsvUtility.Read<SlotsBean>((GlobalConfig.Instance?.GetPath() + "/StreamingAssets") + "/" + "CardData.csv");
         }
         catch (Exception ex)
         {
