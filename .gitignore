@@ -6,6 +6,4 @@
 /Temp
 /*.apk
 /webgl
-/.vs/RedGame/FileContentIndex/7dc3ccbf-d0e4-4ec6-b130-fff12904b2ae.vsidx
-/ProjectSettings/BurstAotSettings_WebGL.json
-/ProjectSettings/CommonBurstAotSettings.json
+/.vs

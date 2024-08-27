@@ -1,0 +1,55 @@
+ManifestFileVersion: 0
+CRC: 492404872
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 1cba25e14aae1a215c9b0de43b9369a9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6220ccf9400c271d1b7e04df0653bd6c
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 1cba25e14aae1a215c9b0de43b9369a9
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0fafa3d111c7c0647ae245a5390d705d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e495b6d4b15f912478cb8c1f28823154, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: DialoguePiece
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.FontData
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+Assets:
+- Assets/Res/DialogueData/0-1.asset
+- Assets/Res/Prefabs/ToastMgr.prefab
+Dependencies: []

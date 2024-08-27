@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DialogueUI : MonoBehaviour,IPointerClickHandler
@@ -102,6 +103,7 @@ public class DialogueUI : MonoBehaviour,IPointerClickHandler
             if (Control0.Instance.Num >= Control0.Instance.dialogueData_SOs.Length)
             {
                 ToastManager.Instance?.CreatToast("¾çÇéÒÑÔÄ¶ÁÍê±Ï");
+                SceneManager.LoadScene("BattleScene");
                 return;
             }
             currentIndex = 0;

@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Live2D/Cubism/Samples/LookAt/LookAt.unity
+    guid: 92700f2c6717d9748b6dd846ed2e72fb
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
     guid: a0e8b44b34fd57145bd703ab465d5ab3
   - enabled: 1
     path: Assets/Scenes/BattleScene.unity
