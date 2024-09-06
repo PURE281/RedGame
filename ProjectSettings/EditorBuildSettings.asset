@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Live2D/Cubism/Samples/LookAt/LookAt.unity
     guid: 92700f2c6717d9748b6dd846ed2e72fb
   - enabled: 1

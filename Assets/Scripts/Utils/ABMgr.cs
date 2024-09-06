@@ -15,7 +15,7 @@ using UnityEngine.Networking;
 /// </summary>
 public class ABMgr : MonoSington<ABMgr>
 {
-    string baseServerUrl = "http://www.pure81.site:82/Public/Upload/game";
+    string baseServerUrl = "https://www.pure81.site/work/Public/Upload/game";
 
     List<ABInfo> localABInfo = new List<ABInfo>();
     List<ABInfo> remoteABInfo = new List<ABInfo>();
@@ -182,10 +182,10 @@ public class ABMgr : MonoSington<ABMgr>
 
     private void OnDestroy()
     {
-        request.Abort();
-        outStream.Dispose();
-        inStream.Dispose();
-        response.Dispose();
+        request?.Abort();
+        outStream?.Dispose();
+        inStream?.Dispose();
+        response?.Dispose();
     }
 
 }
